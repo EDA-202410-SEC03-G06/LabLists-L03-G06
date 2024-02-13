@@ -1,5 +1,31 @@
-a. 	El view tiene una funcion que muestra el menu que consiste de 5 opciones. En esta se puede escoger la 1 para 
-cargar los libros, la funcion 2 que solo toma en cuenta el numero en la posicion 0 para consultar el top de libros deseado
-la funcion 3 hace lo mismo consultando los libros por autor. Para ambas de estas funciones, despues de meter como input el 
-top o el artista, llama al controller para que recoga los datos y salgan ordenados para el usuario. 
-La funcion 4 deja buscar la cantidad de libros de un genero y la 5 salirse de la consola y acabar el programa
+a.¿Cuáles son los mecanismos de interacción (I/O: Input/Output) que tiene el view.py con el usuario?
+
+    El view tiene una funcion que muestra el menu que consiste de 5 opciones. En esta se puede escoger la 1 para  cargar los libros, la funcion 2 que solo toma en cuenta el numero en la posicion 0 para consultar el top de libros deseado la funcion 3 hace lo mismo consultando los libros por autor. Para ambas de estas funciones, despues de meter como input el  top o el artista, llama al controller para que recoga los datos y salgan ordenados para el usuario.  La funcion 4 deja buscar la cantidad de libros de un genero y la 5 salirse de la consola y acabar el programa
+
+b. ¿Cómo se almacenan los datos de GoodReads en el model.py? 
+
+    Primero, se crea un catalogo que crea una serie de array lists o single_linked para los libros, autores y tags. Luego, diferentes funciones usan estas listas vacías para poner los datos del cvs respectivamente. Los libros y book_tags en un array list y los autores y tags en single_linked. 
+
+c. ¿Cuáles son las funciones que comunican el view.py y el model.py?
+
+    Casi todas las funciones se encargan de conectar ambas consolas. Estan las 'load' que ordenan los datos del model en una lista y los entregan de vuelta al view. Estan otras funciones que son similares pero no cargan los datos. En cambio, estas usan las funciones ya hechas en el model para dar datos más especificos que había pedido el view. Estas se cargan a una lista y se devuelven al view.
+
+d. ¿Cuál es la función que permite crear una lista?, ¿Qué datos son necesarios?
+
+    La función que permite crear una lista es newList(), para la cual se necesitan 5 variables, que son:datastructure, cmpfunction, key, filename, y delimiter.
+
+e. ¿Para qué sirve el parámetro datastructure en la función newList()?, ¿Cuáles son los posibles valores para este parámetro?
+
+    El parámetro datastructure sirve para decir que tipo de estructura de datos se va a utilizar, los posibles valores para este parámetro son: ARRAY_LIST, SINGLE_LINKED y DOUBLE_LINKED.
+
+f. ¿Para qué sirve el parámetro cmpfunction en la función newList()?
+
+    El parámetro cmpfuntion en la función newList() sirve como función de comparación para los elementos de la lista, de acuerdo al parámetro dado.
+
+g. ¿Qué hace la función addLast()?
+
+    La función addLast() sirve para agregar un nuevo valor a la ultima posición de la lista, teniendo dos parámetros, lst: que es la lista en la que se inserta el elemento, y element: que es el elemento a insertar
+
+k. ¿Observó algún cambio en el comportamiento del programa al cambiar el valor del parámetro 'datastructure' en la creación de las listas?, explique con sus propias palabras los cambios que notó.
+
+    Al cambiar el datastructure de las funciones, la carga de datos aparenta ser más larga o no acabar, pues al usar la opcion 1 'cargar datos en el catalogo' normal, se demoro unos 30 segundos. Sin embargo, al cambiar los datos la carga simplemente no acabó, lo que significa que la carga no funciona correctamente o el tiempo que requiere este tipo de listas con la cantidad de archivos es muy grande.
