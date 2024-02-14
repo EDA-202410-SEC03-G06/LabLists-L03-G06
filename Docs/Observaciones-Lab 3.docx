@@ -22,7 +22,7 @@ f. ¿Para qué sirve el parámetro cmpfunction en la función newList()?
 
     El parámetro cmpfuntion en la función newList() sirve como función de comparación para los elementos de la lista, de acuerdo al parámetro dado.
 
-g. ¿Qué hace la función addLast()?
+g. ¿Qué hace la función addLast()? 
 
     La función addLast() sirve para agregar un nuevo valor a la ultima posición de la lista, teniendo dos parámetros, lst: que es la lista en la que se inserta el elemento, y element: que es el elemento a insertar
 
