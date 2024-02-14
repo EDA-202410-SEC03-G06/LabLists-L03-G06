@@ -26,6 +26,18 @@ g. ¿Qué hace la función addLast()?
 
     La función addLast() sirve para agregar un nuevo valor a la ultima posición de la lista, teniendo dos parámetros, lst: que es la lista en la que se inserta el elemento, y element: que es el elemento a insertar
 
+h) ¿Qué hace la función getElement()? 
+
+    La función getElement() busca por las posiciones de la lista y retorna la posición del elemento dado
+
+i) ¿Qué hace la función subList()?
+
+    La función subList() recibe una lista, la posición desde donde se desea copiar y el número de elementos que se desean copiar. A partir de esto, se crea una sublista que empieza desde la posición dada con el número de elementos dados.
+
+j) Revise el uso de la función iterator() en las funciones printAuthorData(author) y printBestBooks(books) en la Vista que aplican a una lista de libros. ¿Qué hace la función iterator()?
+
+    La función iterator() hace un recorrido en la lista y accede solo a los elementos para así imprimirlos simplemente una vez
+
 k. ¿Observó algún cambio en el comportamiento del programa al cambiar el valor del parámetro 'datastructure' en la creación de las listas?, explique con sus propias palabras los cambios que notó.
 
     Al cambiar el datastructure de las funciones, la carga de datos aparenta ser más larga o no acabar, pues al usar la opcion 1 'cargar datos en el catalogo' normal, se demoro unos 30 segundos. Sin embargo, al cambiar los datos la carga simplemente no acabó, lo que significa que la carga no funciona correctamente o el tiempo que requiere este tipo de listas con la cantidad de archivos es muy grande.
